@@ -1,0 +1,8 @@
+<div style="width: 100vw; height: 100vh; position: relative;">
+  <h1>Login</h1>
+  <div class="login-form">
+    <input [(ngModel)]="username" placeholder="Email" />
+    <input type="password" [(ngModel)]="password" placeholder="Password" />
+    <button type="submit" (click)="auth.login(username,password)">Login</button>
+  </div>
+</div>

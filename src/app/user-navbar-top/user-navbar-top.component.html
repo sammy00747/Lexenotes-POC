@@ -1,0 +1,8 @@
+<div style="width: 100%; display: flex; justify-content: space-between;">
+  <div class="nav-btn" (click)="goToPage('home')">Home</div>
+  <div style="display: flex;">
+    <div *ngIf="isAdmin()" class="nav-btn" (click)="goToPage('admin/dashboard')">Admin Dashboard</div>
+    <div *ngIf="isAdmin()" class="nav-btn" (click)="goToPage('create-user')">Create User</div>
+    <div class="nav-btn" (click)="goToPage('edit-profile')">My Profile</div>
+  </div>
+</div>

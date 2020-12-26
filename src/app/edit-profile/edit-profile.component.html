@@ -1,0 +1,24 @@
+<div>
+  <app-user-navbar-top></app-user-navbar-top>
+  <div style="position: relative;">
+    <div class="form">
+      <input [(ngModel)]="fname" placeholder="First Name" />
+      <input [(ngModel)]="lname" placeholder="Last Name" />
+      <input [(ngModel)]="email" placeholder="Email" />
+      <input [(ngModel)]="prefrd_email" placeholder="Preferred Email" />
+      <input [(ngModel)]="ofc_email" placeholder="Office Email" />
+      <input [(ngModel)]="ofc_phno" placeholder="Office Phone Number" />
+      <input [(ngModel)]="cell_phno" placeholder="Cell Phone Number" />
+      <input [(ngModel)]="prefrd_phno" placeholder="Preferred Phone Number" />
+      <input [(ngModel)]="inst" placeholder="Institution" />
+      <input [(ngModel)]="alt_inst" placeholder="Alternate Institution" />
+      <div>
+        <label for="roles">Roles</label><br />
+        Admin: <input type="checkbox" [(ngModel)]="roles.admin" /><br />
+        Author: <input type="checkbox" [(ngModel)]="roles.author" /><br />
+        User: <input type="checkbox" [(ngModel)]="roles.user" /><br />
+      </div>
+      <button (click)="createUser()">Create User</button>
+    </div>
+  </div>
+</div>

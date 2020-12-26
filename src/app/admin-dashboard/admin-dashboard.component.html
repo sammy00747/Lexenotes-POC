@@ -1,0 +1,11 @@
+<div>
+  <app-user-navbar-top></app-user-navbar-top>
+  <table>
+    <tbody>
+      <tr *ngFor="let user of user_list">
+        <td>{{user.fname+' '+user.lname}}</td>
+        <td>{{user.email}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,14 @@
+.form {
+  margin-top: 25px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+  padding: 15px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  & > * {
+    margin: 15px 0;
+  }
+}
